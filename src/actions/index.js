@@ -11,4 +11,11 @@ const menuRequested = () => {
   };
 };
 
-export { menuLoaded, menuRequested };
+const addedToCart = (id) => {
+  return {
+    type: "ITEM_ADD_TO_CART",
+    payload: id,
+  };
+};
+
+export { menuLoaded, menuRequested, addedToCart };
