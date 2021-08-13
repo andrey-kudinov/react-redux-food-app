@@ -25,4 +25,17 @@ const deleteFromCart = (id) => {
   };
 };
 
-export { menuLoaded, menuRequested, addedToCart, deleteFromCart };
+const changeTotal = (value) => {
+  return {
+    type: "CHANGE_TOTAL",
+    payload: value,
+  };
+};
+
+const loadTotal = () => {
+  return {
+    type: "LOAD_TOTAL",
+  };
+};
+
+export { menuLoaded, menuRequested, addedToCart, deleteFromCart, changeTotal, loadTotal };
